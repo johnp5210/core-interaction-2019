@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>core interaction
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    
+    <style>
+        
+        .course{
+    	width: 50%;
+	height: 50%;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: #f1f1f1;
+	background-blend-mode: multiply;
+    float: left;
+            transition: .2s ease;
+}
+
+#courseStudio{
+	background-image: url(assets/bg.png);
+	background-color: #f1f1f1;
+}
+
+#courseLab{
+	background-image: url(assets/bg2.png);
+	background-color: #f1f1f1;
+    margin-bottom: 10vh;
+
+}
+        
+        
+        
+        .course:hover {
+            transform: scale(.98)
+        }
+        
+      @media only screen and (max-width: 1000px) {
+  
+        
+.course{
+	width: 100%;
+	height: 50%;
+    float: none;
+        margin-bottom: 0vh;
+
+}
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <a href="studio/index.html"> <div id="courseStudio" class="course"></div></a>
+    <a href="lab/index.html"><div id="courseLab" class="course"></div></a>
+    
+    <div class="info" id='nav'>
+        <div class="buttonContainer">
+            <a href="https://docs.google.com/document/d/1tGMUAONeDx9IaLDAwZ7qkOKZx4n_HsEcC11pFY-JolA/edit?usp=sharing" target="_blank">
+                <button class="active">
+                    <p>syllabus</p>
+                </button>
+            </a>
+            
+                        <a href="studio/index.html">
+                <button class="active">
+                    <p>studio</p>
+                </button>
+            </a>
+            
+            
+                        <a href="lab/index.html">
+                <button class="active">
+                    <p>lab</p>
+                </button>
+            </a>
+            
+            
+
+        </div>
+
+
+        <button class="active" id="studentSites" style="border-radius:12px">
+            <p>student sites <span id="plus">+</span> <span id="minus" style="display:none">–</span></p>
+        </button>
+
+        <div class="buttonContainer" id="students">
+            <a href="https://berniefigs.github.io/coreinteraction2019/index.html" target="_blank">
+                <button class="active">
+                    <p>Bernadette Figueroa</p>
+                </button>
+            </a>
+            <a href="https://harriep.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Harrie Park</p>
+                </button>
+            </a>
+            <a href="https://dannigo.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Danielle Beatriz Go</p>
+                </button>
+            </a>
+            <a href="https://rebeccadags.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Rebecca D'Agostino</p>
+                </button>
+            </a>
+            <a href="https://dolfa226.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Aira Patricia Dolfo</p>
+                </button>
+            </a>
+            <a href="https://jz451557641.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Jizheng Chen</p>
+                </button>
+            </a>
+            <a href="https://shreya797.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Shreya Chittaranjan</p>
+                </button>
+            </a>
+            <a href="https://mesor946.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Rebecca Mesonjnik</p>
+                </button>
+            </a>
+
+            <a href="https://parkm458.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Min Jung Park</p>
+                </button>
+            </a>
+            
+             <a href="https://stephvnie.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Stephanie Lin</p>
+                </button>
+            </a>
+            
+            <a href="https://nikadiom.github.io/CoreInteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Nika Diomidovskaia</p>
+                </button>
+            </a>
+            
+             <a href="https://siyuhang23.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Sabrina Hang</p>
+                </button>
+            </a>
+            
+            <a href="https://shihjufu.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Shih-Ju Fu</p>
+                </button>
+            </a>
+            
+            <a href="https://vilmorin.github.io/coreinteraction2019/index.html" target="_blank">
+                <button class="active">
+                    <p>Emiliano Flores</p>
+                </button>
+            </a>
+            
+            <a href="https://sunayanabali.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Sunayana Bali</p>
+                </button>
+            </a>  
+            
+            <a href="https://fairymon.github.io/coreinteraction2019/" target="_blank">
+                <button class="active">
+                    <p>Hyun Ji Jo</p>
+                </button>
+            </a>
+            
+        </div>
+
+    </div>
+
+    <div class='info' id="circle"><p id="randName">Random Name</p></div>
+    <p id="time">10:56:09 PM</p>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
